@@ -12,8 +12,6 @@ cityForm.addEventListener("submit", function(event) {
     console.log(event)
     console.log(event.target)
 
-    
-
 
    function getcity() {
     let cityUrl = `${rootUrl}/geo/1.0/direct?q=${cityName}&limit=${limit}&appid=${apiKey}`;
@@ -42,6 +40,3 @@ function getForecast(lat,lon) {
     getcity()
 });
 }
-getcity()
-
-
